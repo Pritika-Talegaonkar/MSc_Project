@@ -11,7 +11,7 @@ body {
 
 /* 
   AUTH WRAPPER: 
-  Full-screen container with a blue background, 
+  Full-screen container with a blue background,
   centers the login card 
 */
 #authPageWrapper {
@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #007BFF; /* Blue background to match the main header */
+  background: #007BFF;
 }
 
 /* The card (white box) for login/sign-up */
@@ -233,4 +233,46 @@ button:hover {
   padding: 15px;
   border-radius: 4px;
   display: none;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+@media (max-width: 768px) {
+  /* Adjust container and header for smaller screens */
+  header {
+    padding: 15px 20px;
+  }
+  #logoutBtn {
+    top: 15px;
+    right: 20px;
+    padding: 6px 10px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .topics-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+  }
+  .auth-container {
+    width: 90%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .auth-form input, .auth-form button {
+    padding: 10px;
+  }
+  select, button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  .submit-code, .new-question {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }
