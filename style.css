@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #FF8C00; /* Blue background */
+  background: #007BFF; /* Blue background */
 }
 
 /* The card (white box) for login/sign-up */
@@ -75,7 +75,7 @@ body {
 
 /* Header */
 header {
-  background: #FF8C00;
+  background: #007BFF;
   color: #fff;
   padding: 20px 30px;
   border-radius: 8px;
@@ -91,7 +91,7 @@ header h1 {
   position: absolute;
   top: 20px;
   right: 30px;
-  background: #B3D4FC;
+  background: #dc3545;
   border: none;
   padding: 8px 12px;
   border-radius: 4px;
@@ -100,7 +100,7 @@ header h1 {
   transition: background 0.3s;
 }
 #logoutBtn:hover {
-  background: #B3D4FC;
+  background: #c82333;
 }
 
 /* Main Container */
@@ -131,11 +131,11 @@ header h1 {
 }
 .topic-box:hover {
   background: #f1f1f1;
-  border-color: #FF8C00;
+  border-color: #007BFF;
 }
 .topic-box.active {
   background: #e6f0ff;
-  border-color: #FF8C00;
+  border-color: #007BFF;
 }
 .control-group {
   text-align: center;
@@ -206,7 +206,7 @@ button:hover {
   word-wrap: break-word;
 }
 .submit-code {
-  background: #FF8C00;
+  background: #007BFF;
   color: #fff;
   border: none;
   padding: 10px 20px;
