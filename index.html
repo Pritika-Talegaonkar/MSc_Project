@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Practice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
+  <!-- CodeMirror Core CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+  <!-- CodeMirror Dark Theme (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/theme/material-darker.min.css">
+  <!-- Our custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- AUTH WRAPPER: For the login/signup background -->
+  <div id="authPageWrapper">
+    <!-- Authentication Page -->
+    <div id="authPage" class="auth-container">
+      <h2 id="formTitle">Login</h2>
+      <form id="authForm" class="auth-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit" id="authBtn">Login</button>
+      </form>
+      <p id="toggleAuth">
+        <span id="toggleText">Don't have an account?</span>
+        <a href="#" id="toggleLink">Sign Up</a>
+      </p>
+    </div>
+  </div>
+  
+  <!-- Main Page -->
+  <div id="mainPage">
+    <header>
+      <h1>Programming Practice</h1>
+      <button id="logoutBtn">Logout</button>
+      <p>Select a topic and difficulty level to generate a new problem.</p>
+    </header>
+    <div class="container">
+      <!-- Selection Page -->
+      <div id="selectionPage">
+        <h2>Select a Topic</h2>
+        <div class="topics-grid">
+          <!-- Add all your topics here -->
+          <div class="topic-box">Array</div>
+          <div class="topic-box">Linked List</div>
+          <div class="topic-box">Stack</div>
+          <div class="topic-box">Queue</div>
+          <div class="topic-box">Deque</div>
+          <div class="topic-box">Tree</div>
+          <div class="topic-box">Binary Tree</div>
+          <div class="topic-box">Binary Search Tree</div>
+          <div class="topic-box">AVL Tree</div>
+          <div class="topic-box">Red-Black Tree</div>
+          <div class="topic-box">Heap</div>
+          <div class="topic-box">Graph</div>
+          <div class="topic-box">Hash Table</div>
+          <div class="topic-box">Set</div>
+          <div class="topic-box">B-Tree</div>
+          <div class="topic-box">B+ Tree</div>
+          <div class="topic-box">QuickSort</div>
+          <div class="topic-box">MergeSort</div>
+          <div class="topic-box">HeapSort</div>
+          <div class="topic-box">Bubble Sort</div>
+          <div class="topic-box">Selection Sort</div>
+          <div class="topic-box">Insertion Sort</div>
+          <div class="topic-box">Binary Search</div>
+          <div class="topic-box">Linear Search</div>
+          <div class="topic-box">Depth-First Search (DFS)</div>
+          <div class="topic-box">Breadth-First Search (BFS)</div>
+          <div class="topic-box">Dijkstra's Algorithm</div>
+          <div class="topic-box">Bellman-Ford Algorithm</div>
+          <div class="topic-box">Floyd-Warshall Algorithm</div>
+          <div class="topic-box">Kruskal's Algorithm</div>
+          <div class="topic-box">Prim's Algorithm</div>
+          <div class="topic-box">A* Search Algorithm</div>
+          <div class="topic-box">Backtracking Algorithms</div>
+          <div class="topic-box">Dynamic Programming Algorithms</div>
+        </div>
+        <div class="control-group">
+          <label for="difficultySelect">Select Difficulty:</label>
+          <select id="difficultySelect">
+            <option value="">--Choose Difficulty--</option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="difficult">Difficult</option>
+          </select>
+          <br>
+          <button id="generateBtn">Generate Problem</button>
+        </div>
+      </div>
+      
+      <!-- Problem Page -->
+      <div id="problemPage">
+        <button id="backBtn" class="back-button">&larr; Back to Selection</button>
+        <div class="problem-container">
+          <h2 id="problemTitle"></h2>
+          <div class="problem-text" id="problemText"></div>
+          <div class="editor-container">
+            <h3>Code Editor</h3>
+            <textarea id="codeEditor"></textarea>
+            <button id="submitCode" class="submit-code">Submit Code</button>
+            <button id="newQuestion" class="submit-code new-question">New Question</button>
+          </div>
+          <div class="control-group">
+            <button id="hintBtn">Show Hint</button>
+            <div class="hint-section" id="hintSection">
+              <p><strong>Hint:</strong> Break the problem into smaller parts and consider edge cases.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CodeMirror Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/python/python.min.js"></script>
+  <!-- Our custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
