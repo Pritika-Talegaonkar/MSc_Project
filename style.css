@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #007BFF; /* Blue background */
+  background: #A7C7E7; /* Blue background */
 }
 
 /* The card (white box) for login/sign-up */
@@ -28,7 +28,7 @@ body {
   background: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 20px;
 }
 .auth-container h2 {
@@ -75,12 +75,12 @@ body {
 
 /* Header */
 header {
-  background: #007BFF;
+  background: #A7C7E7;
   color: #fff;
   padding: 20px 30px;
   border-radius: 8px;
   position: relative;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   margin-bottom: 20px;
 }
 header h1 {
@@ -110,7 +110,7 @@ header h1 {
   background: #fff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 /* Topic Selection */
@@ -131,11 +131,11 @@ header h1 {
 }
 .topic-box:hover {
   background: #f1f1f1;
-  border-color: #007BFF;
+  border-color: #A7C7E7;
 }
 .topic-box.active {
   background: #e6f0ff;
-  border-color: #007BFF;
+  border-color: #A7C7E7;
 }
 .control-group {
   text-align: center;
@@ -206,7 +206,7 @@ button:hover {
   word-wrap: break-word;
 }
 .submit-code {
-  background: #007BFF;
+  background: #A7C7E7;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -262,8 +262,8 @@ button:hover {
   }
 }
 
-/* For larger screens (min-width: 769px) */
-@media (min-width: 769px) {
+/* For screens between 769px and 1399px (the default range) */
+@media (min-width: 769px) and (max-width: 1399px) {
   body {
     padding: 40px;
   }
@@ -279,5 +279,27 @@ button:hover {
   }
   .auth-container {
     width: 360px;
+  }
+}
+
+/* For screens larger than 1400px (very wide monitors) */
+@media (min-width: 1400px) {
+  /* If you want even less margin, you can reduce body padding or container margin. */
+  body {
+    padding: 40px 60px;
+  }
+  .container {
+    /* Option 1: A larger fixed max-width */
+    max-width: 1400px;
+    /* Option 2: Or a percentage-based width to fill more space
+       max-width: 90%;
+    */
+    padding: 40px 60px;
+  }
+  header h1 {
+    font-size: 2.2rem;
+  }
+  .topic-box {
+    padding: 24px;
   }
 }
