@@ -19,7 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #A7C7E7; /* Blue background */
+  background: #FF8C00; /* Blue background */
 }
 
 /* The card (white box) for login/sign-up */
@@ -75,7 +75,7 @@ body {
 
 /* Header */
 header {
-  background: #A7C7E7;
+  background: #FF8C00;
   color: #fff;
   padding: 20px 30px;
   border-radius: 8px;
@@ -91,7 +91,7 @@ header h1 {
   position: absolute;
   top: 20px;
   right: 30px;
-  background: #dc3545;
+  background: #B3D4FC;
   border: none;
   padding: 8px 12px;
   border-radius: 4px;
@@ -100,7 +100,7 @@ header h1 {
   transition: background 0.3s;
 }
 #logoutBtn:hover {
-  background: #c82333;
+  background: #B3D4FC;
 }
 
 /* Main Container */
@@ -131,11 +131,11 @@ header h1 {
 }
 .topic-box:hover {
   background: #f1f1f1;
-  border-color: #A7C7E7;
+  border-color: #FF8C00;
 }
 .topic-box.active {
   background: #e6f0ff;
-  border-color: #A7C7E7;
+  border-color: #FF8C00;
 }
 .control-group {
   text-align: center;
@@ -206,7 +206,7 @@ button:hover {
   word-wrap: break-word;
 }
 .submit-code {
-  background: #A7C7E7;
+  background: #FF8C00;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -264,9 +264,6 @@ button:hover {
 
 /* For screens between 769px and 1399px (the default range) */
 @media (min-width: 769px) and (max-width: 1399px) {
-  /* body {
-    padding: 40px;
-  } */
   .container {
     max-width: 1200px;
     padding: 40px;
@@ -285,9 +282,6 @@ button:hover {
 /* For screens larger than 1400px (very wide monitors) */
 @media (min-width: 1400px) {
   /* If you want even less margin, you can reduce body padding or container margin. */
-  /* body {
-    padding: 40px 60px;
-  } */
   .container {
     /* Option 1: A larger fixed max-width */
     max-width: 1400px;
