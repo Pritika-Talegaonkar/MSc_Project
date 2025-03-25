@@ -264,9 +264,9 @@ button:hover {
 
 /* For screens between 769px and 1399px (the default range) */
 @media (min-width: 769px) and (max-width: 1399px) {
-  body {
+  /* body {
     padding: 40px;
-  }
+  } */
   .container {
     max-width: 1200px;
     padding: 40px;
@@ -285,9 +285,9 @@ button:hover {
 /* For screens larger than 1400px (very wide monitors) */
 @media (min-width: 1400px) {
   /* If you want even less margin, you can reduce body padding or container margin. */
-  body {
+  /* body {
     padding: 40px 60px;
-  }
+  } */
   .container {
     /* Option 1: A larger fixed max-width */
     max-width: 1400px;
