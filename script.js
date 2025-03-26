@@ -89,8 +89,7 @@ document.addEventListener("DOMContentLoaded", function() {
     return (
       "Problem for " + topic + " [" + difficulty + "]:\n\n" +
       "Write a function to solve a problem related to " + topic + ".\n" +
-      "Consider edge cases and optimize your solution.\n\n" +
-      "(Placeholder text. Integrate your LLM or custom logic here.)"
+      "Consider edge cases and optimize your solution.\n\n"
     );
   }
   
